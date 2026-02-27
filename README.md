@@ -21,6 +21,7 @@ accountable-humanity/
 │   └── index.html          # Governance detail page
 ├── open-source/
 │   └── index.html          # Licensing detail page
+├── images/                 # Static image assets
 └── README.md
 ```
 

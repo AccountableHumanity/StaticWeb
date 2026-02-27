@@ -2,8 +2,8 @@
    Variables & Reset
    ============================================================ */
 :root {
-  --color-primary:    #165256;
-  --color-accent:     #165256;
+  --color-primary:    #0f3d40;
+  --color-accent:     #0f3d40;
   --color-bg:         #ffffff;
   --color-bg-alt:     #f4f4f4;
   --color-bg-deep:    #111111;
@@ -195,6 +195,16 @@ a:hover { opacity: 0.8; }
 .hero h1 {
   color: var(--color-primary);
   margin-bottom: 1.25rem;
+}
+
+.hero-logo {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-sub {
