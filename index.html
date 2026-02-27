@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accountable Humanity</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <nav class="navbar">
+      <a class="nav-brand" href="#hero">Accountable Humanity</a>
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <li><a href="#problem"        class="nav-link">The Problem</a></li>
+        <li><a href="#network"        class="nav-link">The Network</a></li>
+        <li><a href="#how-it-works"   class="nav-link">How It Works</a></li>
+        <li><a href="#rules"          class="nav-link">The Rules</a></li>
+        <li><a href="#sustainability" class="nav-link">Sustainability</a></li>
+        <li><a href="#governance"     class="nav-link">Governance</a></li>
+        <li><a href="#open-source"    class="nav-link">Open Source</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ── Hero ── -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <h1>Accountable Humanity</h1>
+        <p class="hero-sub">Public infrastructure for a more accountable, more human internet.</p>
+      </div>
+    </section>
+
+    <!-- ── The Problem ── -->
+    <section id="problem" class="section section--problem">
+      <div class="container">
+        <p class="problem-statement">The cost to generate content is quickly approaching zero, but the cost of consuming it never decreases.</p>
+      </div>
+    </section>
+
+    <!-- ── The Network ── -->
+    <section id="network" class="section">
+      <div class="container">
+        <h2>The Network</h2>
+        <p>We're building a Sybil-resistant network of human-controlled, pseudo-anonymous identities anchored to a physical location without requiring any disclosure of personal data or government issued identifiers.</p>
+        <p>This is not a new social network but public infrastructure. We invite others to use this infrastructure to build a better, more accountable, more human internet.</p>
+      </div>
+    </section>
+
+    <!-- ── How It Works ── -->
+    <section id="how-it-works" class="section section--alt">
+      <div class="container">
+        <h2>How It Works</h2>
+
+        <h3 class="subsection-title">Registration</h3>
+        <p>To join the network a human will register a pseudo-anonymous identity that is only accessible by biometrics on their mobile device. The biometric information is not stored or shared during registration, only used locally on the device to protect the identity.</p>
+        <p>This registration will take place in the presence of another trusted human to provide a proof of humanity that AI cannot fake. This, along with the biometric requirement to access the identity, serves as proof that a real human is controlling the identity. Registrations will also include coarse GPS coordinates, connecting each identity to a physical location.</p>
+
+        <h3 class="subsection-title">Membership Fee</h3>
+        <p>The network discourages multiple registrations through a membership fee that not only helps secure the network, but provides the means to sustain it.</p>
+        <p>All fees will be segregated and operational costs will come from interest earned on the fees held. If a human violates the rules, their identity will be inactivated and their membership fee will be donated to a charity chosen at the time of registration. If a human wishes to leave the network, they may request a refund of their membership fee which may be granted after a mandatory review period.</p>
+      </div>
+    </section>
+
+    <!-- ── The Rules ── -->
+    <section id="rules" class="section">
+      <div class="container">
+        <h2>The Rules</h2>
+        <p>The network has only a few basic rules.</p>
+        <ol class="rules-list">
+          <li>No human may have more than one active identity on the network.</li>
+          <li>Identities cannot be sold, transferred, or shared.</li>
+          <li>All content authored and signed by the identity must include a disclosure about AI involvement in the content creation process.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ── Sustainability ── -->
+    <section id="sustainability" class="section section--alt">
+      <div class="container">
+        <h2>Sustainability</h2>
+        <p>The network operates entirely on interest earned from pooled membership fees. The membership fees themselves are never touched, they serve as the permanent foundation from which all operating funds are derived.</p>
+        <p>The network must maintain an operating reserve sufficient to cover at least six months of projected infrastructure costs at all times.</p>
+        <p>Committee members who participate in violation reviews are compensated from the monthly budget. Payment per participation may not exceed 5% of the current registration fee.</p>
+        <p>Remaining funds may be used to grow the network in functionality and reach. When labor is required, the network prioritizes human workers, compensated at above market rates.</p>
+        <p>Board members are eligible to perform contracted labor for the network and be compensated accordingly. Beyond contracted work, board members may receive no additional compensation in any form. No gifts, bonuses, or other financial benefits.</p>
+      </div>
+    </section>
+
+    <!-- ── Governance ── -->
+    <section id="governance" class="section">
+      <div class="container">
+        <h2>Governance</h2>
+        <p>Initially, the network will be governed by a 5–7 member LLC, where each member holds a seat on the operating board. The board oversees all decisions that impact the network. The board will be exclusively made of the initial founders of the network.</p>
+        <p>When the operating budget can sustain legal counsel, the LLC will transition to a more formal structure — such as a public benefit corporation — that legally enshrines the network's mission and values. This transition ensures the network's founding principles are protected not just by the goodwill of its operators, but by enforceable law.</p>
+      </div>
+    </section>
+
+    <!-- ── Open Source ── -->
+    <section id="open-source" class="section section--cta">
+      <div class="container">
+        <h2>Open Source</h2>
+        <div class="card-grid">
+          <div class="card card--dark">
+            <h3>Core Infrastructure &mdash; AGPL-3.0</h3>
+            <p>The network's core infrastructure is released under the GNU Affero General Public License (AGPL-3.0). Any modifications to the core must be made publicly available under the same license, ensuring the foundation of the network remains open, transparent, and accountable to all.</p>
+          </div>
+          <div class="card card--dark">
+            <h3>Client Libraries &amp; SDKs &mdash; MIT</h3>
+            <p>Client libraries and SDKs made available for building on the network are released under the MIT License, allowing developers to integrate freely without license obligations extending to their own applications. We encourage others to use this infrastructure to build a better, more accountable, more human internet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Accountable Humanity &mdash; All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
