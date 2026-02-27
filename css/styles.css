@@ -183,13 +183,31 @@ a:hover { opacity: 0.8; }
 }
 
 /* ============================================================
+   Above Fold
+   ============================================================ */
+.above-fold {
+  min-height: calc(100vh - var(--nav-height));
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ============================================================
    Hero
    ============================================================ */
 .hero {
   background: var(--color-bg);
   color: var(--color-primary);
-  padding: 7rem 0;
+  flex: 1;
+  display: flex;
+  align-items: center;
   text-align: center;
+  padding: 3rem 0;
+  min-height: 280px;
+}
+
+.hero .container {
+  width: 100%;
 }
 
 .hero h1 {
