@@ -132,6 +132,21 @@ a:hover { opacity: 0.8; }
   border-bottom-color: var(--color-accent);
 }
 
+.nav-link--cta {
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  padding: 0.3rem 0.85rem;
+  border-bottom: 1px solid var(--color-accent);
+  transition: background var(--ease), color var(--ease);
+}
+
+.nav-link--cta:hover {
+  background: var(--color-accent);
+  color: var(--color-primary);
+  border-bottom-color: var(--color-accent);
+  opacity: 1;
+}
+
 /* ── Hamburger (hidden on desktop) ── */
 .hamburger {
   display: none;
@@ -186,7 +201,54 @@ a:hover { opacity: 0.8; }
   color: var(--color-accent);
   font-weight: 500;
   max-width: 560px;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
+}
+
+.btn--waitlist {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: var(--color-accent);
+  color: var(--color-bg);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  border: 2px solid var(--color-accent);
+  transition: background var(--ease), color var(--ease);
+}
+
+.btn--waitlist:hover {
+  background: transparent;
+  color: var(--color-accent);
+  opacity: 1;
+}
+
+/* ============================================================
+   Detail Page Hero
+   ============================================================ */
+.page-hero {
+  background: var(--color-primary);
+  color: var(--color-text-light);
+  padding: 3rem 0 2.5rem;
+}
+
+.page-hero h1 {
+  color: var(--color-text-light);
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  margin-top: 0.75rem;
+}
+
+.back-link {
+  display: inline-block;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  transition: color var(--ease);
+}
+
+.back-link:hover {
+  color: var(--color-accent);
+  opacity: 1;
 }
 
 /* ============================================================
@@ -297,6 +359,29 @@ a:hover { opacity: 0.8; }
 
 .section--cta h2 {
   color: var(--color-text-light);
+}
+
+/* ============================================================
+   Learn More Links
+   ============================================================ */
+.learn-more {
+  display: inline-block;
+  margin-top: 1.75rem;
+  color: var(--color-accent);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--ease);
+}
+
+.learn-more:hover {
+  border-bottom-color: var(--color-accent);
+  opacity: 1;
+}
+
+.learn-more--light {
+  color: var(--color-accent);
 }
 
 /* ============================================================
