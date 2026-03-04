@@ -69,3 +69,7 @@ This site is designed for GitHub Pages:
 2. Go to **Settings → Pages**
 3. Set source to the `main` branch, root directory
 4. The site will be live at `https://<username>.github.io/<repo-name>/`
+
+## License
+
+This project is licensed under the [GNU Affero General Public License v3.0 (AGPL-3.0-only)](https://www.gnu.org/licenses/agpl-3.0.html).

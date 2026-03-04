@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Human Verification API &mdash; Accountable Humanity</title>
+  <meta name="description" content="Free APIs for proof of humanity, geographic verification, and content signing. MIT-licensed SDKs. Get early developer access." />
+  <link rel="canonical" href="https://www.accountablehumanity.com/developers/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Human Verification API — Accountable Humanity" />
+  <meta property="og:description" content="Free APIs for proof of humanity, geographic verification, and content signing. MIT-licensed SDKs. Get early developer access." />
+  <meta property="og:url" content="https://www.accountablehumanity.com/developers/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.accountablehumanity.com/images/logo.svg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="For Developers — Human Verification API — Accountable Humanity" />
+  <meta name="twitter:description" content="Build on open-source human verification infrastructure. MIT-licensed SDKs, AGPL-3.0 core, and free APIs for proof of humanity and content verification." />
+  <meta name="twitter:image" content="https://www.accountablehumanity.com/images/logo.svg" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Human Verification API",
+    "description": "Free APIs for proof of humanity, geographic verification, and content signing. MIT-licensed SDKs. Get early developer access.",
+    "url": "https://www.accountablehumanity.com/developers/",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Accountable Humanity",
+      "url": "https://www.accountablehumanity.com"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.accountablehumanity.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Human Verification API",
+        "item": "https://www.accountablehumanity.com/developers/"
+      }
+    ]
+  }
+  </script>
+
+  <link rel="icon" href="/images/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
+  <!-- TODO: Add integrity (SRI) hash when Tally provides a versioned embed script URL -->
+  <script async src="https://tally.so/widgets/embed.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <nav class="navbar">
+      <a class="nav-brand" href="../">Accountable Humanity</a>
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <li><a href="../#problem"        class="nav-link">Problem</a></li>
+        <li><a href="../#network"        class="nav-link">Solution</a></li>
+        <li><a href="../#how-it-works"   class="nav-link">How</a></li>
+        <li><a href="../#rules"          class="nav-link">Rules</a></li>
+        <li><a href="../#sustainability" class="nav-link">Sustainability</a></li>
+        <li><a href="../#governance"     class="nav-link">Governance</a></li>
+        <li><a href="../#open-source"    class="nav-link">Open Source</a></li>
+        <li><a href="https://tally.so/r/ZjdMXo" class="nav-link" data-tally-open="ZjdMXo" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Contact</a></li>
+        <li><a href="https://tally.so/r/Zjddr5" class="nav-link nav-link--cta" data-tally-open="Zjddr5" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Join the Waitlist</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container">
+        <a href="../" class="back-link">&larr; Back</a>
+        <h1>For Developers</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Public Infrastructure, Not a Walled Garden</h2>
+        <p>Accountable Humanity is not a platform you use — it is infrastructure you build on. The network provides a foundation of verified human identities that any application, platform, or service can leverage to add trust to their user interactions.</p>
+        <p>We invite developers to use this infrastructure to build a better, more accountable, more human internet.</p>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <h2>What the API Provides</h2>
+        <p><strong>Proof of humanity.</strong> Verify that a given identity belongs to a real, unique human who was verified in person. No bots, no duplicates, no synthetic personas.</p>
+        <p><strong>Geographic anchoring.</strong> Check the approximate geographic region associated with an identity. Useful for platforms that need to verify local reviewers, local voters, or regional participants.</p>
+        <p><strong>AI disclosure verification.</strong> Verify signed content and its associated AI disclosure metadata. Determine whether a piece of content was attested as human-authored, AI-assisted, or AI-generated.</p>
+        <p><strong>Signature verification.</strong> Verify cryptographic signatures against the network's transparency log. Confirm that content was signed by a specific verified identity and has not been tampered with.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Open Source Licensing</h2>
+        <div class="card-grid">
+          <div class="card card--dark">
+            <h3>Core Infrastructure &mdash; AGPL-3.0</h3>
+            <p>The network's servers, transparency log integration, and identity verification systems are AGPL-3.0. Any modifications to the core must be made publicly available, keeping the foundation open and accountable.</p>
+          </div>
+          <div class="card card--dark">
+            <h3>Client Libraries &amp; SDKs &mdash; MIT</h3>
+            <p>SDKs and client libraries are MIT-licensed. Integrate freely into your applications — commercial or otherwise — without license obligations extending to your own code.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <h2>Build With Us</h2>
+        <p>The network is currently in development. We are building the API, the SDKs, and the documentation in the open. If you are interested in building on proof-of-humanity infrastructure, join the waitlist to get early access to the developer preview.</p>
+        <p>Ideas for what you can build:</p>
+        <ul class="feature-list">
+          <li>A social platform where verified-human posts are distinguishable from bot content</li>
+          <li>A review system that filters for real, geographically relevant reviewers</li>
+          <li>A content management system that embeds human authorship metadata</li>
+          <li>A voting or polling tool resistant to ballot stuffing and bot manipulation</li>
+          <li>A comment system that verifies local voices in local conversations</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--cta">
+      <div class="container cta-center">
+        <h2>Get Early Access</h2>
+        <p class="cta-sub">Join the developer waitlist for early access to the API and SDKs.</p>
+        <a href="https://tally.so/r/Zjddr5" class="btn btn--waitlist" data-tally-open="Zjddr5" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Join the Waitlist</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Related</h2>
+        <ul class="related-links">
+          <li><a href="../open-source/">Open Source Licensing Details</a></li>
+          <li><a href="../human-content/">Verify Human-Authored Content</a></li>
+          <li><a href="../one-person-one-identity/">One Person, One Identity &mdash; Sybil Resistance</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Accountable Humanity &mdash; All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

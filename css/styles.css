@@ -2,11 +2,11 @@
    Variables & Reset
    ============================================================ */
 :root {
-  --color-primary:    #0f3d40;
-  --color-accent:     #0f3d40;
+  --color-primary:    #165256;
+  --color-accent:     #165256;
   --color-bg:         #ffffff;
   --color-bg-alt:     #f4f4f4;
-  --color-bg-deep:    #111111;
+  --color-bg-deep:    #165256;
   --color-text:       #111111;
   --color-text-light: #ffffff;
   --color-text-muted: #666666;
@@ -28,10 +28,46 @@ html {
 }
 
 body {
-  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: var(--color-bg);
   color: var(--color-text);
   line-height: 1.75;
+}
+
+/* ============================================================
+   Accessibility
+   ============================================================ */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  padding: 0.75rem 1.5rem;
+  background: var(--color-primary);
+  color: #fff;
+  z-index: 100;
+  font-weight: 600;
+}
+.skip-link:focus {
+  top: 0;
+}
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+.nav-link:focus-visible, .nav-link--cta:focus-visible {
+  outline-color: #ffffff;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* ============================================================
@@ -44,7 +80,7 @@ h1, h2, h3 {
 
 h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
 h2 { font-size: clamp(1.4rem, 3vw, 2rem); margin-bottom: 1.25rem; }
-h3 { font-size: 1.05rem; }
+h3 { font-size: 1.25rem; font-weight: 600; }
 
 p { margin-bottom: 1rem; }
 p:last-child { margin-bottom: 0; }
@@ -132,19 +168,22 @@ a:hover { opacity: 0.8; }
   border-bottom-color: var(--color-text-light);
 }
 
-/* Waitlist CTA in nav — white outline on teal */
+/* Waitlist CTA in nav — white filled button with teal text */
 .nav-link--cta {
-  color: var(--color-text-light);
+  cursor: pointer;
+  background: var(--color-text-light);
+  color: var(--color-primary);
   border: 1px solid var(--color-text-light);
+  border-radius: 4px;
   padding: 0.3rem 0.85rem;
-  border-bottom: 1px solid var(--color-text-light);
+  font-weight: 600;
   transition: background var(--ease), color var(--ease);
 }
 
 .nav-link--cta:hover {
-  background: var(--color-text-light);
+  background: #e5e7eb;
   color: var(--color-primary);
-  border-bottom-color: var(--color-text-light);
+  border-color: #e5e7eb;
   opacity: 1;
 }
 
@@ -158,7 +197,7 @@ a:hover { opacity: 0.8; }
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0;
+  padding: 12px 9px;
   flex-shrink: 0;
 }
 
@@ -236,6 +275,7 @@ a:hover { opacity: 0.8; }
 
 /* Waitlist button — teal on white, inverts on hover */
 .btn--waitlist {
+  cursor: pointer;
   display: inline-block;
   padding: 0.75rem 2rem;
   background: var(--color-primary);
@@ -270,7 +310,7 @@ a:hover { opacity: 0.8; }
 
 .back-link {
   display: inline-block;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: 0.03em;
@@ -418,6 +458,74 @@ a:hover { opacity: 0.8; }
 
 .learn-more--light:hover {
   border-bottom-color: var(--color-text-light);
+}
+
+/* ============================================================
+   Related Links
+   ============================================================ */
+.related-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.related-links li a {
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--ease);
+}
+
+.related-links li a:hover {
+  border-bottom-color: var(--color-accent);
+  opacity: 1;
+}
+
+/* ============================================================
+   Feature List (Developers page)
+   ============================================================ */
+.feature-list {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.feature-list li {
+  line-height: 1.6;
+}
+
+/* ============================================================
+   CTA Section — Waitlist button on dark background
+   ============================================================ */
+.section--cta .btn--waitlist {
+  background: var(--color-text-light);
+  color: var(--color-primary);
+  border-color: var(--color-text-light);
+}
+
+.section--cta .btn--waitlist:hover {
+  background: transparent;
+  color: var(--color-text-light);
+}
+
+/* CTA container — centered text for sub-page CTA sections */
+.cta-center {
+  text-align: center;
+}
+
+/* CTA sub-text — muted paragraph beneath CTA heading */
+.cta-sub {
+  color: var(--color-card-muted);
+  max-width: 560px;
+  margin: 0 auto 2rem;
+}
+
+/* Spacing helper — small top margin for inline learn-more links */
+.mt-sm {
+  margin-top: 1rem;
 }
 
 /* ============================================================
